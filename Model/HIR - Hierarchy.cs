@@ -1,7 +1,7 @@
 //.HIR - Hierarchy / Skeleton
 foreach(bone) //20 bytes per bone
 {
-    4   int     bone.ParentIndex	
+    4   int     bone.ParentIndex
     2   short   bone.X
     2   short   bone.Y
     2   short   bone.Z
