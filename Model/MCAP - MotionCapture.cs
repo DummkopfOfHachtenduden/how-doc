@@ -2,7 +2,6 @@
 //Extracted mcap.mad (93 files)
 foreach(keyframe) //272 bytes per keyframe
 {
-    
     2   ushort  unkUShort0     
     foreach(boneTransform) //per bone branch? (none-leaf-bone) = 10
     {
