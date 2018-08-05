@@ -2,8 +2,7 @@
 public enum MapTileRotateFlip : byte
 {
     None = 0,
-    FlipX = 1,
-    Rotate90 = 2,
-    Rotate180 = 4,
-    Rotate270 = 6,
+    FlipX = 1 << 0,
+    Rotate90 = 1 << 1,
+    Rotate180 = 1 << 2,
 }
