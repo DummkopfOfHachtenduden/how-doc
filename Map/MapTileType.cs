@@ -1,4 +1,3 @@
-[Flags]
 public enum MapTileType : byte
 {
     /// <summary>
@@ -61,7 +60,7 @@ public enum MapTileType : byte
     /// </summary>
     Lava = 11,
 
-    IsWatery = 0x20,
-    IsMine = 0x40,
-    IsWall = 0x80,
+    //IsWatery = 0x20,
+    //IsMine = 0x40,
+    //IsWall = 0x80,
 }
