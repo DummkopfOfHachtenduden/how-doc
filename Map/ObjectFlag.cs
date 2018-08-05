@@ -2,11 +2,12 @@
 public enum ObjectFlag : ushort
 {
     None = 0,
-    Playable = 1,
-    Unk2 = 2,
-    Unk4 = 4,
-    Unk8 = 8,
-    ScriptObj = 16,
-    Inside = 32,   
-    Delayed = 64,
+    Playable = 1 << 0,
+    Bit1 = 1 << 1,
+    Bit2 = 1 << 2,
+    Bit3 = 1 << 3,
+    ScriptObj = 1 << 4,
+    Inside = 1 << 5,
+    Delayed = 1 << 6,
+    Bit7 = 1 << 7,    
 }
