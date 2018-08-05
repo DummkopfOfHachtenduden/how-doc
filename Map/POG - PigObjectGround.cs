@@ -10,10 +10,10 @@ foreach(obj) //94 bytes per object
     2   ushort  obj.ZOffset
     
     2   ushort  obj.ID
-    2   ushort  obj.unkUShort0          //4095 on Chimney (CHIM) and Snowman (SNOWH, SNOWB), otherwise 0
-    2   ushort  obj.Rotation
-    2   ushort  obj.unkUShort1          //0
-    2   ushort  obj.TypeID              //type of object
+    2   ushort  obj.XRotation           // 4096 = 360°
+    2   ushort  obj.YRotation           // 4096 = 360°
+    2   ushort  obj.ZRotation           // 4096 = 360°
+    2   ushort  obj.TypeID              // for instancing
     
     2   ushort  obj.CollisionX
     2   ushort  obj.CollisionY
@@ -27,10 +27,7 @@ foreach(obj) //94 bytes per object
     1   byte    obj.Team                //01, 02, 04, 08, 16, 32
     
     2   ushort  obj.ScriptType    
-    1   byte    obj.ScriptGroup
-    1   byte    obj.ScriptParam0
-    1   byte    obj.ScriptParam1    
-    17  byte[]  obj.ScriptReserved      //more params?   
+    20  byte[]  obj.ScriptParamters      
     2   ushort  obj.ScriptXOffset
     2   ushort  obj.ScriptYOffset
     2   ushort  obj.ScriptZOffset
